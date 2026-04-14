@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block content %} 
+<h1>Calculation Result</h1>
+    
+    <h3>The result is: {{ result }}</h3>
+
+    <br><br>
+
+    <a href="{% url 'home' %}">Go Back to Calculator</a>
+
+    <br><br>
+
+    <form action="{% url 'home' %}">
+        <button type="submit">Calculate Again</button>
+    </form>
+{% endblock %} 
